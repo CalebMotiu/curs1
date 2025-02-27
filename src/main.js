@@ -4,6 +4,4 @@ import { createPinia } from 'pinia'
 
 const pinia = createPinia()
 
-const app = createApp(App)
-
-app.use(pinia).mount('#app')
+createApp(App).use(pinia).mount('#app')

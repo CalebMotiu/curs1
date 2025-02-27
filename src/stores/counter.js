@@ -1,7 +1,10 @@
-import { defineStores } from 'pinia'
+import { defineStore } from 'pinia'
 
 export const useCounter = defineStore('counter', {
     state: () => {
-        return
-    }
+        return{
+            count: 0,
+            level: 0
+        }
+    },
 })
